@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Edit</title>
   </head>
   <body>
     <header>
@@ -35,7 +35,72 @@
     </header>
     <!-- Fin Header -->
 
-    <main></main>
+    <main>
+      <main>
+        <h2>EDITAR ITEM</h2>
+        <form action="">
+          <label for="categoria">Categoría:</label>
+          <select name="categorias" id="">
+            <option value="">Seleccionar</option>
+            <option value="">Star Wars</option>
+            <option value="">Pokemon</option>
+            <option value="">Harry Potter</option>
+          </select>
+          
+          <label for="licencia">Licencia:</label>
+          <select name="licencias" id="">
+            <option value="">Seleccionar</option>
+            <option value="">UNo</option>
+            <option value="">Dos</option>
+          </select>
+  
+          <p>
+            <label for="nombre del producto">Nombre del producto:</label>
+            <input type="text" name="nombreDelProducto" id="" />
+          </p>
+
+          <p>
+            <textarea name="" id="" cols="30" rows="10"></textarea> 
+          </p>
+
+          <label for="SKU">SKU:</label>
+          <input type="text" name="SKU" placeholder="NAR001012" id="" />    
+          
+          <label for="precio">Precio:</label>
+          <input type="number" name="precio" placeholder="$1799,00" id="" />  
+          
+          <label for="stock">Stock:</label>
+          <input type="number" name="stock" placeholder="10" id="" />   
+          
+          <p>
+            <label for="descuento">Descuento:</label>
+            <input type="number" name="descuento" placeholder="10%" id="" />
+
+            <label for="cuotas">Cuotas:</label>
+            <select name="cuotas" id="">
+              <option value="">Seleccionar</option>
+              <option value="">6 cuotas sin interes</option>
+              <option value="">3 cuota sin interes</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="imagenes">Imágenes</label>
+            <input type="file" id="imagenes" />
+          </p>
+        
+          <div>
+            <button type="submit">Modificar Producto</button>
+          </div>
+        </form>
+  
+
+      </main>
+
+
+
+
+    </main>
 
     <footer>
       <section>

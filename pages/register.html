@@ -3,39 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>register</title>
   </head>
+ 
   <body>
     <header>
       <!-- Inicio Header -->
       <nav>
         <picture>
-          <a href="./index.html">
+          <a href="../index.html">
             <!-- Enlace que nos lleva al "Home" -->
             <img
-              src="./img/branding/logo_light_horizontal.svg"
+              src="../img/branding/logo_light_horizontal.svg"
               alt="Isologotipo de la Marca Funkoshop"
             />
           </a>
         </picture>
         <ul>
           <li>
-            <a href="./pages/shop.html">SHOP</a>
+            <a href="../pages/shop.html">VER TIENDA</a>
             <!-- shortcut "li*4>a para escribir cuatro li que contiene c/u una etiqueta a" -->
           </li>
-          <li><a href="./pages/contacto.html">CONTACTO</a></li>
-          <li><a href="./pages/login.html">LOGIN</a></li>
-          <li>
-            <a href="./pages/cart.html">
-              <img src="./img/icons/cart-icon.svg" alt="icono de carrito" />
-            </a>
-          </li>
+          <li><a href="../pages/register.html">ADMIN</a></li>
+          <li><a href="/">SALIR</a></li>
         </ul>
       </nav>
     </header>
     <!-- Fin Header -->
 
-    <main></main>
+    <main>
+      <h2>CREA TU CUENTA</h2>
+      <h3>Completa el formulario para ser parte del mundo de los Funkos</h3>
+
+      <!--inicio de formulario-->
+      <form action="">
+
+        <P>
+          <label for="nombre">Nombre:</label>
+          <input type="text" name="nombre" placeholder="Jhon" id="" required />
+        </P>
+
+        <P>
+          <label for="apellido">Apellido:</label>
+          <input type="text" name="apellido" placeholder="Don" id="" required/>
+        </P>
+        
+        <P>
+          <label for="email">Email:</label>
+          <input type="email" name="email" placeholder="johndoe@correo.com" id="" required />
+        </P>
+
+        <P>
+          <label for="contraseña">Contraseña:</label>
+          <input type="password" name="contraseña" pattern=".{6,}" id="" required /> <!--la contraseña contiene 6 o mas caract-->
+        </P>
+
+        <P>
+          <label for="repita contraseña">Repita contraseña:</label>
+          <input type="password" name="repita contraseña" pattern=".{6,}" id="" requiered />
+        </P>
+
+        <button type="submit">Registrar</button> <!--BOTON REGISTRAR-->
+        
+        <!--TIENE LA OPCION DE ACEPTAR, ANTES ME LLEVA AL LINK DE TERMINOS Y CONDICIONES-->
+        <input type="checkbox" name="termsAndConds"> Acepto <a href="link" target="_blank" > Terminos y condiciones</a><br>
+        
+      </form> <!--FIN DEL FORMULARIO-->
+
+    </main>
 
     <footer>
       <section>
