@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <title>Home | Funkoshop</title>
+  <link rel="stylesheet" href="css/index.css".css">
   <!-- "ALT" + "124" es el símbolo "Pipe" -->
   <body>
     <header>
       <!-- Inicio Header -->
-      <nav>
-        <picture>
+      <nav class="navbar container">
+        <picture class="navbar__logo">
           <a href="./index.html">
             <!-- Enlace que nos lleva al "Home" -->
             <img
@@ -19,15 +20,29 @@
             />
           </a>
         </picture>
-        <ul>
-          <li>
-            <a href="./pages/shop.html">SHOP</a>
-            <!-- shortcut "li*4>a para escribir cuatro li que contiene c/u una etiqueta a" -->
+        <ul class="navbar__menu">
+          <li class="navbar__item with-submenu">
+            <a class="navbar__link with-icon" href="./pages/shop.html">SHOP <iconify-icon icon="gg:chevron-down"></iconify-icon></a>
+              <!-- shortcut "li*4>a para escribir cuatro li que contiene c/u una etiqueta a" -->
+              <ul class="submenu">
+                <li class="submenu__item">
+                  <a class="submenu__link href="">Funkos</a>
+                </li>                 
+                <li class="submenu__item">
+                  <a class="submenu__link href="">Remeras</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="submenu__link ref="">LLaveros</a>
+                </li>
+            </ul>
+            <a href=""></a>
           </li>
-          <li><a href="./pages/contact.html">CONTACTO</a></li>
-          <li><a href="./pages/login.html">LOGIN</a></li>
-          <li>
-            <a href="./pages/cart.html">
+          <li class="navbar__item">
+            <a class="navbar__link" href="./pages/contact.html">CONTACTO</a></li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="./pages/login.html">LOGIN</a></li>
+          <li class="navbar__item">
+            <a class="navbar__cart" href="./pages/cart.html">
               <img src="./img/icons/cart-icon.svg" alt="icono de carrito" />
             </a>
           </li>
@@ -178,5 +193,6 @@
       <p>All rights reserved 2023 - Funkoshop &copy;</p>
       <!-- caracter de todos los derechos reservados "&copy" -->
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
   </body>
 </html>
