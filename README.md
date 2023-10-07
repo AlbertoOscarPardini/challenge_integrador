@@ -3,10 +3,8 @@
 
 ### Equipo
 #### María Florencia Zerbino
-#### Yanina Lamatrice
 #### Evelyn Torres
-#### Stefany Valdez Donnet
 #### Gabriel Pescio
 #### Federico Barderi
 #### Santiago Lopez
-#### Alberto Oscar Pardini  
+#### Alberto Oscar Pardini
