@@ -4,30 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin</title>
+<!-- STYLE CSS -->
+    <link rel="stylesheet" href="../../CSS/index.css" />
   </head>
   <body>
+   <!-- Inicio Header -->
     <header>
-      <!-- Inicio Header -->
-      <nav>
-        <picture>
-          <a href="../index.html">
-            <!-- Enlace que nos lleva al "Home" -->
+      <nav class="navbar container">
+        <picture class="navbar__logo">
+          <a href="../../index.html">
             <img
-              src="../img/branding/logo_light_horizontal.svg"
+              src="../../img/branding/logo_light_horizontal.svg"
               alt="Isologotipo de la Marca Funkoshop"
             />
           </a>
         </picture>
-        <ul>
-          <li>
-            <a href="./shop.html">SHOP</a>
+        <ul class="navbar__menu">
+          <li class="navbar__item with-submenu">
+            <a class="navbar__link with-icon" href="/pages/shop/shop.html"
+              >SHOP<iconify-icon icon="mdi:chevron-down"></iconify-icon
+            ></a>
+            <ul class="submenu">
+              <li class="submenu__item">
+                <a href="" class="submenu__link">Funkos</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="submenu__link">Remeras</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="submenu__link">Llaveros</a>
+              </li>
+            </ul>
             <!-- shortcut "li*4>a para escribir cuatro li que contiene c/u una etiqueta a" -->
           </li>
-          <li><a href="./contact.html">CONTACTO</a></li>
-          <li><a href="./login.html">LOGIN</a></li>
-          <li>
-            <a href="./cart.html">
-              <img src="../img/icons/cart-icon.svg" alt="icono de carrito" />
+          <li class="navbar__item">
+            <a class="navbar__link" href="../contact.html">CONTACTO</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="/pages/admin/login.html">LOGIN</a>
+          </li>
+          <li class="navbar__item__with-icon">
+            <a class="cart" href="../../pages/cart.html">
+              <img src="../../img/icons/cart-icon.svg" alt="cart-icon" />
             </a>
           </li>
         </ul>
@@ -35,20 +53,19 @@
     </header>
     <!-- Fin Header -->
 
-    <main>
+    <main class="list container">
       <!-- Formulario para búsqueda -->
-      <form action="">
-        <input type="submit" name="" id="">
+      <form action="" class="list__search">
+        <input type="submit" name="" id="" class="search__btn">
         <input type="text" placeholder="código, nombre o categoría">
       </form>
 
-      <table border=""> <!-- el atributo "border" luego se hace desde CSS -->
-        <thead>
-          <h3>LISTADO DE PRODUCTOS</h3>
-          <h4>AGREGAR</h4>
-          <a href="../pages/create.html">
-            <img src="../img/icons/mdi_plus-box.svg" alt="">
-          </a>
+      <table border="0" class="list__table"> <!-- el atributo "border" luego se hace desde CSS -->
+<h3 class="table__title">LISTADO DE PRODUCTOS</h3>
+          <h4 class="table__subtitle">AGREGAR<a href="../../pages/admin/create.html">
+            <img src="../../img/icons/mdi_plus-box.svg" alt="">
+          </a></h4>
+        <thead class="table__head">          
           <tr>
             <th>ID</th>
             <th>Código</th>
@@ -58,142 +75,144 @@
             <th></th>
           </tr>
         </thead>
-        <tbody>
+        <tbody class="tbody">
           <tr>
             <td>1</td>
             <td>STW001001</td>
             <td>Baby Yoda Blueball</td>
             <td>STAR WARS</td>
-            <td><img src="../img/icons/edit_pencil.svg" alt=""></td>
-            <td><img src="../img/icons/delete_trash.svg" alt=""></td>
+            <td><img src="../../img/icons/edit_pencil.svg" alt=""></td>
+            <td><img src="../../img/icons/delete_trash.svg" alt=""></td>
           </tr>
           <tr>
             <td>2</td>
             <td>STW001002</td>
             <td>Baby Yoda Blueball</td>
             <td>STAR WARS</td>
-            <td><img src="../img/icons/edit_pencil.svg" alt=""></td>
-            <td><img src="../img/icons/delete_trash.svg" alt=""></td>
+            <td><img src="../../img/icons/edit_pencil.svg" alt=""></td>
+            <td><img src="../../img/icons/delete_trash.svg" alt=""></td>
           </tr>
           <tr>
             <td>3</td>
             <td>STW001003</td>
             <td>Baby Yoda Blueball</td>
             <td>STAR WARS</td>
-            <td><img src="../img/icons/edit_pencil.svg" alt=""></td>
-            <td><img src="../img/icons/delete_trash.svg" alt=""></td>
+            <td><img src="../../img/icons/edit_pencil.svg" alt=""></td>
+            <td><img src="../../img/icons/delete_trash.svg" alt=""></td>
           </tr>
           <tr>
             <td>4</td>
             <td>STW001004</td>
             <td>Baby Yoda Blueball</td>
             <td>STAR WARS</td>
-            <td><img src="../img/icons/edit_pencil.svg" alt=""></td>
-            <td><img src="../img/icons/delete_trash.svg" alt=""></td>
+            <td><img src="../../img/icons/edit_pencil.svg" alt=""></td>
+            <td><img src="../../img/icons/delete_trash.svg" alt=""></td>
           </tr>
           <tr>
             <td>5</td>
             <td>PMK001001</td>
             <td>Baby Yoda Blueball</td>
             <td>STAR WARS</td>
-            <td><img src="../img/icons/edit_pencil.svg" alt=""></td>
-            <td><img src="../img/icons/delete_trash.svg" alt=""></td>
+            <td><img src="../../img/icons/edit_pencil.svg" alt=""></td>
+            <td><img src="../../img/icons/delete_trash.svg" alt=""></td>
           </tr>
           <tr>
             <td>6</td>
             <td>PMK001002</td>
             <td>Baby Yoda Blueball</td>
             <td>STAR WARS</td>
-            <td><img src="../img/icons/edit_pencil.svg" alt=""></td>
-            <td><img src="../img/icons/delete_trash.svg" alt=""></td>
+            <td><img src="../../img/icons/edit_pencil.svg" alt=""></td>
+            <td><img src="../../img/icons/delete_trash.svg" alt=""></td>
           </tr>
           <tr>
             <td>7</td>
             <td>PMK001003</td>
             <td>Baby Yoda Blueball</td>
             <td>STAR WARS</td>
-            <td><img src="../img/icons/edit_pencil.svg" alt=""></td>
-            <td><img src="../img/icons/delete_trash.svg" alt=""></td>
+            <td><img src="../../img/icons/edit_pencil.svg" alt=""></td>
+            <td><img src="../../img/icons/delete_trash.svg" alt=""></td>
           </tr>
           <tr>
             <td>8</td>
             <td>PMK001004</td>
             <td>Baby Yoda Blueball</td>
             <td>STAR WARS</td>
-            <td><img src="../img/icons/edit_pencil.svg" alt=""></td>
-            <td><img src="../img/icons/delete_trash.svg" alt=""></td>
+            <td><img src="../../img/icons/edit_pencil.svg" alt=""></td>
+            <td><img src="../../img/icons/delete_trash.svg" alt=""></td>
           </tr>
           <tr>
             <td>9</td>
             <td>PMK001005</td>
             <td>Baby Yoda Blueball</td>
             <td>STAR WARS</td>
-            <td><img src="../img/icons/edit_pencil.svg" alt=""></td>
-            <td><img src="../img/icons/delete_trash.svg" alt=""></td>
+            <td><img src="../../img/icons/edit_pencil.svg" alt=""></td>
+            <td><img src="../../img/icons/delete_trash.svg" alt=""></td>
           </tr>
           <tr>
             <td>10</td>
             <td>HPT001001</td>
             <td>Baby Yoda Blueball</td>
             <td>STAR WARS</td>
-            <td><img src="../img/icons/edit_pencil.svg" alt=""></td>
-            <td><img src="../img/icons/delete_trash.svg" alt=""></td>
+            <td><img src="../../img/icons/edit_pencil.svg" alt=""></td>
+            <td><img src="../../img/icons/delete_trash.svg" alt=""></td>
           </tr>
           <tr>
             <td>11</td>
             <td>HPT001002</td>
             <td>Baby Yoda Blueball</td>
             <td>STAR WARS</td>
-            <td><img src="../img/icons/edit_pencil.svg" alt=""></td>
-            <td><img src="../img/icons/delete_trash.svg" alt=""></td>
+            <td><img src="../../img/icons/edit_pencil.svg" alt=""></td>
+            <td><img src="../../img/icons/delete_trash.svg" alt=""></td>
           </tr>
           <tr>
             <td>12</td>
             <td>HPT001003</td>
             <td>Baby Yoda Blueball</td>
             <td>STAR WARS</td>
-            <td><img src="../img/icons/edit_pencil.svg" alt=""></td>
-            <td><img src="../img/icons/delete_trash.svg" alt=""></td>
+            <td><img src="../../img/icons/edit_pencil.svg" alt=""></td>
+            <td><img src="../../img/icons/delete_trash.svg" alt=""></td>
           </tr>
           <tr>
             <td>13</td>
             <td>HPT001004</td>
             <td>Baby Yoda Blueball</td>
             <td>STAR WARS</td>
-            <td><img src="../img/icons/edit_pencil.svg" alt=""></td>
-            <td><img src="../img/icons/delete_trash.svg" alt=""></td>
+            <td><img src="../../img/icons/edit_pencil.svg" alt=""></td>
+            <td><img src="../../img/icons/delete_trash.svg" alt=""></td>
           </tr>
         </tbody>
       </table>
 
     </main>
 
-    <footer>
-      <section>
-        <nav>
-          <ul>
-            <li>
-              <a href="./shop.html">SHOP</a>
-            </li>
-            <li>
-              <a href="./register.html">REGISTRARSE</a>
-            </li>
-            <li>
-              <a href="./login.html">LOGIN</a>
-            </li>
-            <li>
-              <a href="./contact.html">CONTACTO</a>
-            </li>
-          </ul>
-          <picture>
-            <img
-              src="../img/branding/isotype.svg"
-              alt="Isotipo de la marca Funkoshop"
-            />
-          </picture>
-        </nav>
-      </section>
-      <p>All rights reserved 2023 - Funkoshop &copy;</p>
+    <footer class="footer">
+      <nav class="navbar container">
+        <ul class="navbar__item">
+          <li class="navbar__item">
+            <a class="navbar__link" href="/pages/shop/shop.html">SHOP</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="/pages/admin/register.html"
+              >REGISTRARSE</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="/pages/admin/login.html">LOGIN</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="../contact.html"
+              >CONTACTO</a
+            >
+          </li>
+        </ul>
+        <picture>
+          <img
+            src="../../img/branding/isotype.svg"
+            alt="Isotipo de la marca Funkoshop"
+          />
+        </picture>
+      </nav>
+      <p class="footer__copy">rights reserved 2023 - Funkoshop &copy;</p>
       <!-- caracter de todos los derechos reservados "&copy" -->
     </footer>
   </body>
