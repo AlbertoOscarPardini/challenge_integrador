@@ -1,4 +1,10 @@
+/* GOOGLE FONT */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;900&family=Raleway:wght@100;300;400;500;600;700;900&display=swap');
+
+/* GLIDE DEFAULT STYLE */
+@import url('https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css');
+@import url('https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css');
+
 
 :root{
 
@@ -271,11 +277,6 @@ header {
     text-transform: uppercase;
 }
 
-.slider__items {
-    display: flex;
-    gap: var(--spacing-24);
-}
-
 .card-item__cover {
     display: flex;
     position: relative;
@@ -332,6 +333,21 @@ header {
     font-size: var(--font-xsmall);
     color: var(--secondary-solid);
     font-weight: 700;
+}
+
+iconify-icon[icon="tabler:chevron-left"],
+iconify-icon[icon="tabler:chevron-right"] {
+    color: var(--dark-solid);
+    font-size: var(--font-medium);
+    font-weight: 700;
+}
+
+.glide__arrow--left {
+    left: 0;
+}
+
+.glide__arrow--right {
+    right: 0;
 }
 
 /* FOOTER */
@@ -876,6 +892,10 @@ header {
     display: flex;
     align-items: center;
     gap: var(--spacing-24);
+}
+
+.item__img {
+    flex: 1 1 100%;
 }
 
 .item__info {
